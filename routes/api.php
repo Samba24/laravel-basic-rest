@@ -19,4 +19,6 @@ use App\Http\Controllers\RandomController;
 */
 Route::get('/randoms', 'RandomController@index');
 Route::post('/random/add','RandomController@store');
+Route::delete('/random/delete/{id}','RandomController@destroy');
+Route::post('/random/update/{id}','RandomController@update');
 

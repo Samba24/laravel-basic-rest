@@ -25,7 +25,6 @@ class RandomController extends Controller
      */
     public function create()
     {
-        //
     }
 
     /**
@@ -36,7 +35,17 @@ class RandomController extends Controller
      */
     public function store(Request $request)
     {
-        
+        $random = new Random();
+        $random->description = $request->request->get('description');
+        if($random->save()){
+            return response()->json([
+                'state' => true
+            ]);
+        }else{
+            return response()->json([
+                'state' => false
+            ]);
+        }
     }
 
     /**
@@ -70,7 +79,17 @@ class RandomController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $random = Random::find($id);
+        $random->description = $request->request->get('description');
+        if($random->update()){
+            return response()->json([
+                'state' => true
+            ]);
+        }else{
+            return response()->json([
+                'state' => false
+            ]);
+        }
     }
 
     /**
@@ -81,6 +100,14 @@ class RandomController extends Controller
      */
     public function destroy($id)
     {
-        //
+        if(Random::destroy($id)){
+            return response()->json([
+                'state' => true
+            ]);
+        }else{
+            return response()->json([
+                'state' => false
+            ]);
+        };
     }
 }
