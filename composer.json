@@ -1,10 +1,11 @@
 {
-    "name": "laravel/laravel",
+    "name": "laravel/basic-rest",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Basic Laravel REST API",
     "keywords": [
         "framework",
-        "laravel"
+        "laravel",
+        "api"
     ],
     "license": "MIT",
     "require": {
