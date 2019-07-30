@@ -1,7 +1,7 @@
 {
-    "name": "laravel/basic-rest",
+    "name": "laravel/easy-crud",
     "type": "project",
-    "description": "Basic Laravel REST API",
+    "description": "Basic Laravel CRUD for REST API",
     "keywords": [
         "framework",
         "laravel",
