@@ -6,6 +6,6 @@ use App\Random;
 
 $factory->define(Random::class, function (Faker $faker) {
     return [
-        'description' => $faker->text()
+        'description' => $faker->text(20)
     ];
 });

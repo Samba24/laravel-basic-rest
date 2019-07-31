@@ -17,7 +17,7 @@ use App\Http\Controllers\RandomController;
     Api routes not secured
     Auth middlewares should be added next
 */
-Route::get('/randoms', 'RandomController@index');
+Route::get('/randoms','RandomController@index');
 Route::post('/random/add','RandomController@store');
 Route::delete('/random/delete/{id}','RandomController@destroy');
 Route::post('/random/update/{id}','RandomController@update');

@@ -39,7 +39,7 @@ class RandomController extends Controller
         $random->description = $request->request->get('description');
         if($random->save()){
             return response()->json([
-                'state' => true
+                'state' => $random->id
             ]);
         }else{
             return response()->json([
