@@ -1,11 +1,10 @@
 {
-    "name": "laravel/easy-crud",
+    "name": "laravel/laravel",
     "type": "project",
-    "description": "Basic Laravel CRUD for REST API",
+    "description": "The Laravel Framework.",
     "keywords": [
         "framework",
-        "laravel",
-        "api"
+        "laravel"
     ],
     "license": "MIT",
     "require": {
