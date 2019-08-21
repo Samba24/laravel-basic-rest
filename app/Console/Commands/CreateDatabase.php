@@ -38,6 +38,6 @@ class CreateDatabase extends Command
      */
     public function handle()
     {
-        return DB::connection('mysql')->statement('CREATE DATABASE '.$this->argument('database'));
+        return DB::connection('mysql_no_database')->statement('CREATE DATABASE '.$this->argument('database'));
     }
 }
